@@ -6,6 +6,7 @@ import LandingFooter from '../components/LandingFooter';
 import LandingBody from '../components/LandingBody';
 import FAQPageSchema from '../components/FAQPageSchema';
 
+import Head from 'next/head';
 import { faqSchema } from '../data/faqs';
 import { NextSeo, WebPageJsonLd } from 'next-seo';
 import OtherCategories from '../components/OtherCategories';
@@ -14,6 +15,57 @@ import axios from 'axios';
 const index = ({ allNames }) => {
 	return (
 		<>
+		<Head>
+			<link
+				rel="preload"
+				href="/fonts/Poppins-Regular.ttf"
+				as="font"
+				type="font/ttf"
+				crossOrigin=""
+			/>
+			<link
+				rel="preload"
+				href="/fonts/Poppins-Light.ttf"
+				as="font"
+				type="font/ttf"
+				crossOrigin=""
+			/>
+			<link
+				rel="preload"
+				href="/fonts/Poppins-LightItalic.ttf"
+				as="font"
+				type="font/ttf"
+				crossOrigin=""
+			/>
+			<link
+				rel="preload"
+				href="/fonts/Poppins-Italic.ttf"
+				as="font"
+				type="font/ttf"
+				crossOrigin=""
+			/>
+			<link
+				rel="preload"
+				href="/fonts/Poppins-Bold.ttf"
+				as="font"
+				type="font/ttf"
+				crossOrigin=""
+			/>
+			<link
+				rel="preload"
+				href="/fonts/Poppins-SemiBold.ttf"
+				as="font"
+				type="font/ttf"
+				crossOrigin=""
+			/>
+			<link
+				rel="preload"
+				href="/fonts/Overpass.ttf"
+				as="font"
+				type="font/ttf"
+				crossOrigin=""
+			/>
+		</Head>
 			<NextSeo
 				title="Namegen: AI Business Name Generator"
 				description="Use our AI-powered business name generator for free to generate your next perfect business name idea."

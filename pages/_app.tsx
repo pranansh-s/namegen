@@ -8,6 +8,7 @@ import {
 } from 'next-seo';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
+import Head from 'next/head';
 
 const defaultSeoConfig = {
 	title: 'Namegen: AI Business Name Generator',
@@ -78,6 +79,19 @@ function MyApp({ Component, pageProps }) {
 			/>
 			<DefaultSeo {...defaultSeoConfig} />
 			<Component {...pageProps} />
+			<Head>
+				<meta charSet="UTF-8" />
+				<meta httpEquiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+				<meta
+					name="viewport"
+					content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=5.0"
+				/>
+				<meta name="theme-color" content="#8B79CF" />
+				<meta name="apple-mobile-web-app-status-bar" content="#8B79CF" />
+				<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+				<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+				<link rel="manifest" href="/manifest.json"/>
+			</Head>
 		</Provider>
 	);
 }
