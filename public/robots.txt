@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://namegen.io
+
+# Sitemaps
+Sitemap: https://namegen.io/sitemap.xml

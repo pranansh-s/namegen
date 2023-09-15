@@ -1,0 +1,27 @@
+{
+	"name": "Namegen: AI Business Name Generator",
+	"short_name": "Namgen",
+	"description": "Use our AI-powered business name generator for free to generate your next perfect business name idea.",
+	"keywords": "ai, artificial intelligence, name, name generator, startup, startup name generator, business, business name, business name generator, idea, name idea, business idea name",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#8B79CF",
+	"theme_color": "#8B79CF",
+	"icons": [
+		{
+			"src": "/favicon-16x16.png",
+			"type": "image/png",
+			"sizes": "16x16"
+		},
+		{
+			"src": "/favicon-32x32.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		},
+		{
+			"src": "/apple-touch-icon.png",
+			"type": "image/png",
+			"sizes": "180x180"
+		}
+	]
+}
