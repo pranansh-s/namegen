@@ -8,7 +8,7 @@ module.exports = withBundleAnalyzer({
 	reactStrictMode: true,
 	swcMinify: false,
 	images: {
-		formats: ['image/webp', 'image/avif'],
+		formats: ['image/avif', 'image/webp'],
 	},
 	env: {
 		NEXT_PUBLIC_ENV: 'PRODUCTION', // Your environment variables go here
