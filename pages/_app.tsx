@@ -88,9 +88,6 @@ function MyApp({ Component, pageProps }) {
 				/>
 				<meta name="theme-color" content="#8B79CF" />
 				<meta name="apple-mobile-web-app-status-bar" content="#8B79CF" />
-				<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-				<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-				<link rel="manifest" href="/manifest.json"/>
 			</Head>
 		</Provider>
 	);

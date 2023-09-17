@@ -9,6 +9,7 @@ import LandingBody from '../components/LandingBody';
 import FAQPageSchema from '../components/FAQPageSchema';
 import OtherCategories from '../components/OtherCategories';
 
+
 const index = ({ allNames }) => {
 	return (
 		<>

@@ -7,15 +7,12 @@ require('dotenv').config();
 
 module.exports = withBundleAnalyzer({
 	reactStrictMode: true,
-	swcMinify: false,
+	swcMinify: true,
 	images: {
 		formats: ['image/avif', 'image/webp'],
 	},
 	env: {
 		NEXT_PUBLIC_ENV: 'PRODUCTION',
-	},
-	optimization: {
-		minimize: true,
 	},
 	webpack: (config, { isServer }) => {
 		if (!isServer) {
