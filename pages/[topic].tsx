@@ -1,5 +1,7 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { NextSeo } from 'next-seo';
+import { useEffect, useState } from 'react';
+
 import Navbar from '../components/Navbar';
 import LandingFooter from '../components/LandingFooter';
 import LandingHeader from '../components/LandingHeader';
@@ -8,9 +10,7 @@ import StandOut from '../components/StandOut';
 import InstantNames from '../components/InstantNames';
 import OtherCategories from '../components/OtherCategories';
 import Steps from '../components/Steps';
-import { NextSeo } from 'next-seo';
 import FAQPageSchema from '../components/FAQPageSchema';
-import Head from 'next/head';
 
 const Topic = ({ data, allNames }) => {
 	const [fa, setFa] = useState<any>();

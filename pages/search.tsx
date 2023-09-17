@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
 import { NextPage } from 'next';
+import { NextSeo, WebPageJsonLd } from 'next-seo';
+import { useRouter } from 'next/router';
+import { useDispatch, useSelector } from 'react-redux';
 
 import Navbar from '../components/Navbar';
 import Body from '../components/Body';
+import NameModal from '../components/NameModal';
 
-import { useDispatch, useSelector } from 'react-redux';
 import {
 	industrySet,
 	pageSet,
@@ -12,10 +15,6 @@ import {
 	resultsSetAsync,
 	searchTermSet,
 } from '../redux/features/startupNameGeneratorSlice';
-import { useRouter } from 'next/router';
-import NameModal from '../components/NameModal';
-import { NextSeo, WebPageJsonLd } from 'next-seo';
-import Head from 'next/head';
 
 const StartupNameGenerator: NextPage = () => {
 	const page = useSelector((state: any) => state.startupNameGenerator.page);

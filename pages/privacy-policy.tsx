@@ -1,7 +1,6 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
 import { WebPageJsonLd } from 'next-seo';
-import Head from "next/head";
+
+import Navbar from '../components/Navbar';
 
 const privacyPolicy = () => {
 	return (

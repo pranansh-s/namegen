@@ -1,16 +1,13 @@
-import React from 'react';
+import axios from 'axios';
+import { NextSeo, WebPageJsonLd } from 'next-seo';
+import { faqSchema } from '../data/faqs';
 
 import Navbar from '../components/Navbar';
 import LandingHeader from '../components/LandingHeader';
 import LandingFooter from '../components/LandingFooter';
 import LandingBody from '../components/LandingBody';
 import FAQPageSchema from '../components/FAQPageSchema';
-
-import Head from 'next/head';
-import { faqSchema } from '../data/faqs';
-import { NextSeo, WebPageJsonLd } from 'next-seo';
 import OtherCategories from '../components/OtherCategories';
-import axios from 'axios';
 
 const index = ({ allNames }) => {
 	return (

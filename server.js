@@ -1,5 +1,6 @@
-const express = require('express');
 const next = require('next');
+const express = require('express');
+const compression = require('compression');
 const applySecurityHeaders = require('./hooks/securityHeaders');
 
 const dev = process.env.NODE_ENV !== 'production';
@@ -10,6 +11,7 @@ app.prepare().then(() => {
 	const server = express();
 
 	server.use(applySecurityHeaders);
+	server.use(compression());
 
 	server.all('*', (req, res) => {
 		return handle(req, res);
