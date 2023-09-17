@@ -37,57 +37,6 @@ const Topic = ({ data, allNames }) => {
 	}, [data.FAQs]);
 	return (
 		<>
-			<Head>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-Regular.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-Light.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-LightItalic.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-Italic.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-Bold.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-SemiBold.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Overpass.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-			</Head>
 			<NextSeo
 				title={data.MetaTitle.replace(/\b\w/g, (match) => match.toUpperCase())}
 				description={data.MetaDescription}

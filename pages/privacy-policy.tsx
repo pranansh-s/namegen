@@ -6,57 +6,6 @@ import Head from "next/head";
 const privacyPolicy = () => {
 	return (
 		<div className="bg-options h-full min-h-screen px-[12.5%] leading-7">
-			<Head>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-Regular.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-Light.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-LightItalic.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-Italic.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-Bold.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Poppins-SemiBold.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-				<link
-					rel="preload"
-					href="/fonts/Overpass.ttf"
-					as="font"
-					type="font/ttf"
-					crossOrigin=""
-				/>
-			</Head>
 			<WebPageJsonLd
 				description="Privacy Policy page for namegen"
 				id="https://namegen.io/privacy-policy"
