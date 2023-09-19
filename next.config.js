@@ -16,14 +16,14 @@ module.exports = withBundleAnalyzer({
 	},
 	webpack: (config, { isServer }) => {
 		if (!isServer) {
-		  config.plugins.push(
-			new CompressionPlugin({
-			  test: /\.(js|css|svg|woff|woff2|eot|ttf|otf)$/,
-			  filename: '[path][base].gz',
-			})
-		  );
+			config.plugins.push(
+				new CompressionPlugin({
+					test: /\.(js|css|svg|woff|woff2|eot|ttf|otf)$/,
+					filename: '[path][base].gz',
+				})
+			);
 		}
-	
+
 		return config;
 	},
 });
