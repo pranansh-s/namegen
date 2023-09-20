@@ -135,7 +135,7 @@ const NameCard: FC<{ name: string }> = ({ name }) => {
 					dispatch(isSavedOnSet(false));
 					dispatch<any>(domainSetAsync(name));
 				}}
-				className="absolute bottom-5 text-primary group-hover:bg-secondary group-hover:shadow-sm group-hover:shadow-white group-hover:text-white font-poppinsRegular bg-white px-3 py-1 rounded-full text-xs cursor-pointer transition-all duration-300 ease-out">
+				className="absolute bottom-5 text-primary group-hover:bg-secondary group-hover:shadow-sm group-hover:shadow-white group-hover:text-white font-poppinsRegular bg-white px-3 py-1 pt-[6px] rounded-full text-xs cursor-pointer transition-all duration-300 ease-out">
 				check availability
 			</span>
 		</div>

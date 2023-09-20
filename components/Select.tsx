@@ -93,7 +93,7 @@ const Select: FC<{
 			));
 		}
 
-		return <div className="-mt-1 md:text-base text-sm">{values[0]}</div>;
+		return <div className="md:text-base text-sm">{values[0]}</div>;
 	};
 
 	const renderOption = (option: any, index: number) => {
