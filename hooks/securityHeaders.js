@@ -11,6 +11,7 @@ const applySecurityHeaders = (req, res, next) => {
 					'https://domainr.p.rapidapi.com',
 					'https://assignment-api.uspto.gov',
 					'https://hook.kntz.it',
+					'https://www.googletagmanager.com',
 				],
 			},
 		},
