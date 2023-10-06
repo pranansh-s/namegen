@@ -1,6 +1,7 @@
 const helmet = require('helmet');
 
 const applySecurityHeaders = (req, res, next) => {
+	const nonce = Math.random().toString(36).substring(7);
 	helmet({
 		contentSecurityPolicy: {
 			directives: {
@@ -12,7 +13,9 @@ const applySecurityHeaders = (req, res, next) => {
 					'https://assignment-api.uspto.gov',
 					'https://hook.kntz.it',
 					'https://www.googletagmanager.com',
+					"https://www.clarity.ms",
 				],
+				scriptSrc: ["'self'", `'nonce-${nonce}'`],
 			},
 		},
 	})(req, res, next);

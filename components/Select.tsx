@@ -80,8 +80,8 @@ const Select: FC<{
 				<div
 					key={value}
 					onClick={stopPropagation}
-					className="flex bg-secondary font-poppinsLight hover:bg-darkSecondary transition-colors duraiton-300 ease-out rounded-md text-sm px-2 py-1 translate-y-0 text-tertiary items-center ml-1 mr-3 snap-center">
-					<span>{value}</span>
+					className="flex bg-secondary font-poppinsLight hover:bg-darkSecondary transition-colors duraiton-300 ease-out rounded-md text-sm px-2 py-1 translate-y-0 text-tertiary justify-center items-center ml-1 mr-3 snap-center">
+					<span className='pt-[1px]'>{value}</span>
 					<Image
 						data-value={value}
 						alt="x"
