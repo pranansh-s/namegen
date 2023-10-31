@@ -12,10 +12,16 @@ const applySecurityHeaders = (req, res, next) => {
 					'https://domainr.p.rapidapi.com',
 					'https://assignment-api.uspto.gov',
 					'https://hook.kntz.it',
-					'https://www.googletagmanager.com',
-					"https://www.clarity.ms",
+					'https://y.clarity.ms',
+					'https://www.google-analytics.com'
 				],
-				scriptSrc: ["'self'", `'nonce-${nonce}'`],
+				scriptSrc: [
+					"'self'",
+					"'unsafe-eval'",
+					"'unsafe-inline'",
+					'https://www.googletagmanager.com',
+					'https://www.clarity.ms',
+				],
 			},
 		},
 	})(req, res, next);

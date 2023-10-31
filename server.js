@@ -10,8 +10,13 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
 	const server = express();
 
-	server.use(applySecurityHeaders);
 	server.use(compression());
+	server.use((req, res, next) => {
+		if (req.path.includes('_document.tsx')) {
+		  return next();
+		}
+		applySecurityHeaders(req, res, next);
+	});
 
 	server.all('*', (req, res) => {
 		return handle(req, res);
