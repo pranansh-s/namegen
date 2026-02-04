@@ -1,8 +1,5 @@
-'use client'
-
 import { FC, useEffect, useState } from 'react';
 import Image from 'next/image';
-import Lottie from 'lottie-react';
 
 import GenerateButton from './GenerateButton';
 import Results from './Results';
@@ -23,6 +20,12 @@ import {
 } from '../redux/features/startupNameGeneratorSlice';
 import Saved from './Saved';
 import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic';
+
+const Lottie = dynamic(
+  () => import('lottie-react').then((mod) => mod.default),
+  { ssr: false }
+);
 
 const heart = require('../public/icons/heart.svg');
 const chevronUp = require('../public/icons/chevronUp.svg');
