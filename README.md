@@ -1,5 +1,7 @@
 # NameGen - AI-Powered Business Name Generator
 
+Live Demo: https://namegen-ten.vercel.app/
+
 An intelligent web application that helps entrepreneurs and businesses generate creative, available names using AI. This freelance project provides a streamlined interface to craft the perfect brand identity by combining industry-specific keywords, style preferences, and real-time domain availability checks.
 *This application was developed as a freelance tool for real-world business naming and branding exercises. The core naming logic and domain/trademark checks are functional, but integrated API services or design details may evolve based on client needs.*
 
