@@ -8,22 +8,22 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-	const server = express();
+  const server = express();
 
-	server.use(compression());
-	server.use((req, res, next) => {
-		if (req.path.includes('_document.tsx')) {
-		  return next();
-		}
-		applySecurityHeaders(req, res, next);
-	});
+  server.use(compression());
+  server.use((req, res, next) => {
+    if (req.path.includes('_document.tsx')) {
+      return next();
+    }
+    applySecurityHeaders(req, res, next);
+  });
 
-	server.all('*', (req, res) => {
-		return handle(req, res);
-	});
+  server.all('*', (req, res) => {
+    return handle(req, res);
+  });
 
-	server.listen(3000, (err) => {
-		if (err) throw err;
-		console.log('> Ready on http://localhost:3000');
-	});
+  server.listen(3000, err => {
+    if (err) throw err;
+    console.log('> Ready on http://localhost:3000');
+  });
 });
