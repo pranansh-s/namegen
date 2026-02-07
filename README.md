@@ -46,8 +46,6 @@ An intelligent web application that helps entrepreneurs and businesses generate 
     ```
 5.  **Open your browser** and navigate to `http://localhost:3000`.
 
-*This project was created as part of a freelance engagement.*
-
 ---
 
 *This project was created as part of a freelance engagement.*
